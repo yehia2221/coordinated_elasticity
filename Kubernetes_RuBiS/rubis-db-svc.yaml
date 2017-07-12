@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+#id: pxc-node1
+metadata:
+  name: rubis-db
+spec:
+  type: LoadBalancer
+  externalIPs: [172.16.237.52]
+  ports:
+    - port: 3306
+      name: mysql
+  selector:
+    node: rubis-db
+labels:
+  node: rubis-db
