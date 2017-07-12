@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: rubis-web
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rubis-web
+    spec:
+      containers:
+      - name: rubis-web
+        image: pucitcloudnet/rubis-web
+        #image: rubis-web-yehia
+        #imagePullPolicy: IfNotPresent 
+        resources:
+         limits:
+          cpu: "1"
+          memory: 1024Mi
+         requests:
+          cpu: "1"
+          memory: 1024Mi
+        ports:
+        - containerPort: 80
+
