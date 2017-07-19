@@ -1,0 +1,54 @@
+This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 172.16.225.74 (be patient)
+Completed 13000 requests
+Completed 26000 requests
+Completed 39000 requests
+Completed 52000 requests
+Completed 65000 requests
+Completed 78000 requests
+Completed 91000 requests
+Completed 104000 requests
+Completed 117000 requests
+Completed 130000 requests
+Finished 130000 requests
+
+
+Server Software:        Apache/2.4.7
+Server Hostname:        172.16.225.74
+Server Port:            80
+
+Document Path:          /PHP/BrowseCategories.php?region=62
+Document Length:        3599 bytes
+
+Concurrency Level:      90
+Time taken for tests:   114.493 seconds
+Complete requests:      130000
+Failed requests:        0
+Keep-Alive requests:    128971
+Total transferred:      500217151 bytes
+HTML transferred:       467870000 bytes
+Requests per second:    1135.44 [#/sec] (mean)
+Time per request:       79.265 [ms] (mean)
+Time per request:       0.881 [ms] (mean, across all concurrent requests)
+Transfer rate:          4266.57 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0  10.8      0    1005
+Processing:     2   79 120.3     71    5780
+Waiting:        2   79 120.3     71    5779
+Total:          2   79 125.6     71    6041
+
+Percentage of the requests served within a certain time (ms)
+  50%     71
+  66%     84
+  75%     95
+  80%    102
+  90%    120
+  95%    142
+  98%    181
+  99%    215
+ 100%   6041 (longest request)
