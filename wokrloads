@@ -1,0 +1,12 @@
+# some examples for the workload generated, the workloads are repeated more than 3 times based on the objective of the experiment
+
+
+workload1: ab  -kc 400 -n 1000000 -g mixed_251  http://172.16.225.74/PHP/BrowseCategories.php?region=62  >  mixed251 2>&1
+workload2: ab  -kc 480  -n 600000 -g vm_271  http://172.16.225.72/PHP/BrowseCategories.php?region=62  >  vm271 2>&1
+workload3: ab  -kc 400 -n 380000 -g vm_274  http://172.16.225.72/PHP/BrowseCategories.php?region=62  >  vm274 2>&1 
+workload4: ab  -kc 150  -n 300000 -g vm_272  http://172.16.225.72/PHP/BrowseCategories.php?region=62  >  vm272 2>&1
+workload5: ab  -kc 90  -n 130000 -g vm_273  http://172.16.225.72/PHP/BrowseCategories.php?region=62  >  vm273 2>&1
+
+workload1: ab  -kc 150  -n 300000 -g kube_272  http://172.16.237.52/PHP/BrowseCategories.php?region=62  >  kube272 2>&1 
+workload2: ab  -kc 90  -n 130000 -s 100 -g kube_273  http://172.16.237.52/PHP/BrowseCategories.php?region=62  >  kube273 2>&1
+
